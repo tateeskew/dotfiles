@@ -1,6 +1,7 @@
 #!/bin/bash
 #still getting this right.  this may blow up your machine. may. blow. up.
 
+#exit if something fails
 set -e
 
 echo "prerequisites: python git pip dulwich weechat hg ack zsh vim"
@@ -29,7 +30,6 @@ ensure_link "lib/dotfiles/gitconfig"           ".gitconfig"
 ensure_link "lib/dotfiles/ackrc"               ".ackrc"
 ensure_link "lib/dotfiles/weechat"             ".weechat"
 ensure_link "lib/dotfiles/hgignore"            ".hgignore"
-ensure_link "lib/dotfiles/ctags"               ".ctags"
 ensure_link "lib/dotfiles/grc"                 ".grc"
 ensure_link "lib/dotfiles/pythonrc.py"         ".pythonrc.py"
 
