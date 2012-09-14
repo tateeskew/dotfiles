@@ -14,9 +14,6 @@ set nocompatible
 filetype plugin indent on
 set ruler
 
-" Create Undo file when I open a file so I can undo across file closings
-set undofile
-
 " Set leader key to the comma instead of backslash
 let mapleader = ","
 

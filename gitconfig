@@ -1,0 +1,72 @@
+[user]
+	name = Tate Eskew
+	email = tate.eskew@gmail.com
+
+[core]
+    pager = less
+    editor = vim
+    excludesfile = ~/.gitignore
+
+
+[alias]
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+
+    graft = cherry-pick -x
+
+    l   = log -18 --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+    ll  = log     --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+    gl  = log -12 --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+    gll = log     --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+
+    pull = pull --ff-only
+    up = merge --ff-only
+
+    merge = merge --no-ff
+    join = merge --no-ff
+
+    ci = commit
+    cm = commit -m
+
+    d = !git diff | vim -R -
+    di = !git diff --cached | vim -R -
+
+    co = checkout
+    id = rev-parse
+
+    stat = status
+    st = status
+
+    unstage = reset HEAD
+    uns = reset HEAD
+
+    delete-local-branch = branch -D
+    delete-remote-branch = push origin --delete
+    delete-local-reference-to-remote-branch = branch -rd
+
+    currentbranch = !git branch --contains HEAD | grep '*' | tr -s ' ' | cut -d ' ' -f2
+
+    fo = fetch origin
+    fu = fetch upstream
+
+    po = push origin
+    ; lo = pull origin
+
+    mo = !git merge --no-ff origin/`git currentbranch`
+    mu = !git merge --no-ff upstream/`git currentbranch`
+
+    uo = !git merge --ff-only origin/`git currentbranch`
+    uu = !git merge --ff-only upstream/`git currentbranch`
+
+    addremove = !git add . && git add -u
+    addrem = !git addremove
+
+[push]
+    default = current
+
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
