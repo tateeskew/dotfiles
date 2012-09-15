@@ -1,0 +1,32 @@
+2012-09-15 13:54:01	✔	teskew1 (~teskew@206.251.213.173) has joined #vagrant
+2012-09-15 13:54:01	--	Topic for #vagrant is "Welcome to the Vagrant IRC channel! Don't be afraid to ask questions! http://vagrantup.com"
+2012-09-15 13:54:01	--	Topic set by mitchellh on Sun, 07 Mar 2010 18:33:54
+2012-09-15 13:54:01	--	Nicks #vagrant: [adedommelin Akendo_ akoumjian alextucker aussielunix avidal axrfnu Babar bascht Bergle_1 blowery byemask cakehero cdracars chiel chip- chrismear cnf danner darthsteven dcarley denis_b dimka djill djinni eamelink effhaa ehazlett Epelii Erdon ergonlogic Ernestas fcoury fhd fiddyspence fnichol forestbird Freeaqingme| freeformz garethr garthk gregburek halcyonCorsair halkeye hjr3 holoway ichilton io_syl irclogger_com isaiah_ jamesfryman jarib jave jeekl jfroche jgornick jkyle Jochem joekinley johnbender josePhoe1ix jrgifford jslatts jsm jtimberman julianh julienphalip k3VB6u4d KarlHungus kenny kshep lavaman Lefty lstoll m1sc manarth|offline masm masterzen mathieulegrand2 mattdawson Mez mika mitchellh mrb_bk msf namidark nasso nimrod10 nitram_macair NorthIsUp notbrent ortho_stice Partyschaum^away patcon paulproteus pbnan pearkes philips_ PhilK pickels pipeline plopix Prophet5 radmiraal ramsey RichardBronosky_ robmorrissey rtgibbons[away] rtyler s0enke s0undt3ch sakal samkottler|out sascha_d sburjan schisamo scoates shennyg sjl sonne statik SvenDowideit TeamMat teskew teskew1 teukka tjadmin tlockney towski v1nc3ntlaw valardohaeris6 varlon vladdy vStone willejs wonko_be_ xerxas xymox_ z Zeelot3k zipkid zorzar]
+2012-09-15 13:54:01	--	Channel #vagrant: 142 nicks (0 ops, 0 halfops, 0 voices, 142 normals)
+2012-09-15 13:54:01	--	Notice(moorcock.freenode.net): [freenode-info] why register and identify? your IRC nick is how people know you. http://freenode.net/faq.shtml#nicksetup
+2012-09-15 13:54:03	--	Channel created on Sat, 06 Mar 2010 22:27:59
+2012-09-15 13:57:07	✔	jperry2 (~jperry2@pool-72-93-208-89.bstnma.fios.verizon.net) has joined #vagrant
+2012-09-15 14:01:20	✘	teskew (~teskew@206.251.213.173) has quit (Quit: Leaving)
+2012-09-15 14:02:12	✔	wizonesolutions (~quassel@s.wizoneserver.com) has joined #vagrant
+2012-09-15 14:02:12	✘	wizonesolutions (~quassel@s.wizoneserver.com) has quit (Changing host)
+2012-09-15 14:02:12	✔	wizonesolutions (~quassel@drupal.org/user/739994/view) has joined #vagrant
+2012-09-15 14:04:00	✘	Prophet5 (~prophet5@cpe-76-168-246-133.socal.res.rr.com) has quit (Remote host closed the connection)
+2012-09-15 14:10:05	✔	teskew (~teskew@206.251.213.173) has joined #vagrant
+2012-09-15 14:10:05	--	Topic for #vagrant is "Welcome to the Vagrant IRC channel! Don't be afraid to ask questions! http://vagrantup.com"
+2012-09-15 14:10:05	--	Topic set by mitchellh on Sun, 07 Mar 2010 18:33:54
+2012-09-15 14:10:05	--	Nicks #vagrant: [adedommelin Akendo_ akoumjian alextucker am1ja2VuemllCg aussielunix avidal axrfnu Babar bascht Bergle_1 blowery byemask cakehero cdracars chiel chip- chrismear cnf danner darthsteven dcarley denis_b dimka djill djinni eamelink effhaa ehazlett Epelii Erdon ergonlogic Ernestas fcoury fhd fiddyspence fnichol forestbird Freeaqingme| freeformz garethr garthk graeme_f gregburek halcyonCorsair halkeye hjr3 holoway ichilton io_syl irclogger_com isaiah_ jamesfryman jarib jave jeekl jfroche jgornick jkyle Jochem joekinley johnbender josePhoe1ix jperry2 jrgifford jslatts jsm jtimberman julianh julienphalip k3VB6u4d KarlHungus kenny kshep lavaman Lefty lstoll m1sc mabes manarth|offline masm masterzen mathieulegrand2 mattdawson Mez mika mitchellh mrb_bk msf namidark nasso nimrod10 nitram_macair NorthIsUp notbrent ortho_stice Partyschaum^away patcon paulproteus pbnan pearkes philips_ PhilK pickels pipeline plopix Prophet5 radmiraal ramsey RichardBronosky_ robmorrissey rtgibbons[away] rtyler s0enke s0undt3ch sakal samkottler|out sascha_d sburjan schisamo scoates shennyg sjl sonne statik SvenDowideit TeamMat teskew teukka tjadmin tlockney towski v1nc3ntlaw valardohaeris6 varlon vladdy vStone willejs wizonesolutions wonko_be_ xerxas xymox_ z Zeelot3k zipkid zorzar]
+2012-09-15 14:10:05	--	Channel #vagrant: 146 nicks (0 ops, 0 halfops, 0 voices, 146 normals)
+2012-09-15 14:10:11	--	Channel created on Sat, 06 Mar 2010 22:27:59
+2012-09-15 14:11:01	✘	pipeline (foobar@pool-98-116-47-148.nycmny.fios.verizon.net) has quit (Quit: dereference THIS)
+2012-09-15 14:13:33	✘	wizonesolutions (~quassel@drupal.org/user/739994/view) has quit (Ping timeout: 260 seconds)
+2012-09-15 14:13:52	✘	sascha_d (~textual@c-75-72-233-142.hsd1.mn.comcast.net) has quit (Quit: ["Textual IRC Client: www.textualapp.com"])
+2012-09-15 14:15:26	✔	wizonesolutions (~quassel@s.wizoneserver.com) has joined #vagrant
+2012-09-15 14:15:26	✘	wizonesolutions (~quassel@s.wizoneserver.com) has quit (Changing host)
+2012-09-15 14:15:26	✔	wizonesolutions (~quassel@drupal.org/user/739994/view) has joined #vagrant
+2012-09-15 14:19:37	✘	wizonesolutions (~quassel@drupal.org/user/739994/view) has quit (Ping timeout: 245 seconds)
+2012-09-15 14:24:49	✔	wizonesolutions (~quassel@drupal.org/user/739994/view) has joined #vagrant
+2012-09-15 14:28:20	✔	Axsuul (~Axsuul@75-140-87-57.dhcp.mtpk.ca.charter.com) has joined #vagrant
+2012-09-15 14:29:06	✘	wizonesolutions (~quassel@drupal.org/user/739994/view) has quit (Ping timeout: 244 seconds)
+2012-09-15 14:31:33	✔	wizonesolutions (~quassel@s.wizoneserver.com) has joined #vagrant
+2012-09-15 14:31:33	✘	wizonesolutions (~quassel@s.wizoneserver.com) has quit (Changing host)
+2012-09-15 14:31:33	✔	wizonesolutions (~quassel@drupal.org/user/739994/view) has joined #vagrant
