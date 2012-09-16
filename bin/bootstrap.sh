@@ -26,7 +26,7 @@ test -d ~/lib/dulwich || git clone "git://github.com/jelmer/dulwich.git" "$HOME/
 cd "$HOME/lib/dulwich/" ; sudo python setup.py install ; cd -
 # ensure_link "lib/dulwich/dulwich" "lib/hg/hg/dulwich"
 
-test -d ~/lib/dotfiles || git clone https://github.com/tateeskew/dotfiles.git ~/lib/dotfiles
+test -d ~/lib/dotfiles || git clone --recursive https://github.com/tateeskew/dotfiles.git ~/lib/dotfiles
 
 ensure_link "lib/dotfiles/vim"                 ".vim"
 ensure_link "lib/dotfiles/vim/vimrc"           ".vimrc"
