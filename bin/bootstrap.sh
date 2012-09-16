@@ -22,7 +22,7 @@ test -d ~/lib/dulwich || git clone "git://github.com/jelmer/dulwich.git" "$HOME/
 
 # install dulwich
 
-cd "$HOME/lib/dulwich/" ; sudo python "$HOME/lib/dulwich/setup.py install" ; cd -
+cd "$HOME/lib/dulwich/" ; sudo python setup.py install" ; cd -
 # ensure_link "lib/dulwich/dulwich" "lib/hg/hg/dulwich"
 
 test -d ~/lib/dotfiles || git clone https://github.com/tateeskew/dotfiles.git ~/lib/dotfiles
