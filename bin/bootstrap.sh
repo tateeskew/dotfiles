@@ -1,5 +1,6 @@
 #!/bin/bash
 #still getting this right.  this may blow up your machine. may. blow. up.
+#i have a salt machine setup to bootstrap the prerequisites. you'll have to do that on your own.
 
 #exit if something fails
 set -e
