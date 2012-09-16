@@ -13,7 +13,7 @@ function ensure_link {
 mkdir -p ~/lib/hg
 mkdir -p ~/lib/virtualenvs
 mkdir -p ~/bin
-mkdir -p ~/src
+mkdir -p ~/sourcecode
 
 ensure_link "lib/dotfiles/hgrc" ".hgrc"
 
