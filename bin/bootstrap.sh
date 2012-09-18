@@ -35,5 +35,6 @@ ensure_link "lib/dotfiles/ackrc"               ".ackrc"
 ensure_link "lib/dotfiles/weechat"             ".weechat"
 ensure_link "lib/dotfiles/hgignore"            ".hgignore"
 ensure_link "lib/dotfiles/pythonrc.py"         ".pythonrc.py"
+ensure_link "lib/dotfiles/bashrc"              ".bashrc"
 
 echo completed
