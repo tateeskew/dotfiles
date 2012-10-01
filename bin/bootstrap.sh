@@ -15,7 +15,7 @@ command -v vim >/dev/null 2>&1 || { echo >&2 "I require vim, but it's not instal
 command -v zsh >/dev/null 2>&1 || { echo >&2 "I require zsh, but it's not installed.  Aborting."; exit 1; }
 
 
-function ensure_link {
+ensure_link() {
     test -L "$HOME/$2" || ln -s "$HOME/$1" "$HOME/$2"
 }
 
