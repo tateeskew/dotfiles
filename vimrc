@@ -60,3 +60,7 @@ nnoremap <C-l> <C-w>l
 " This sets the comment string for sls (SALT) files to pound sign. The
 " " 'commentary' plugin uses this
 autocmd FileType sls set commentstring=#\ %
+
+" jump to last position of buffer when opening
+au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
+                          \ exe "normal g'\"" | endif
