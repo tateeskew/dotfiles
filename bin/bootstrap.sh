@@ -5,7 +5,14 @@
 #exit if something fails
 set -e
 
-echo "prerequisites: python git pip weechat hg ack zsh vim"
+echo "Prerequisites: python git weechat hg ack zsh vim"
+
+command -v python >/dev/null 2>&1 || { echo >&2 "I require Python, but it's not installed.  Aborting."; exit 1; }
+command -v git >/dev/null 2>&1 || { echo >&2 "I require git, but it's not installed.  Aborting."; exit 1; }
+command -v weechat-ncurses >/dev/null 2>&1 || { echo >&2 "I require weechat, but it's not installed.  Aborting."; exit 1; }
+command -v hg >/dev/null 2>&1 || { echo >&2 "I require mercurial, but it's not installed.  Aborting."; exit 1; }
+command -v vim >/dev/null 2>&1 || { echo >&2 "I require vim, but it's not installed.  Aborting."; exit 1; }
+
 
 function ensure_link {
     test -L "$HOME/$2" || ln -s "$HOME/$1" "$HOME/$2"
