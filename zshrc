@@ -72,7 +72,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 TERM=xterm-256color
 
 # Grab my AWS keys
-source ~/Documents/AWSInformation/tates_aws_keys
+if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
+    source ~/Documents/AWSInformation/tates_aws_keys
+fi
 
 # Grab my python settings
 export PYTHONSTARTUP="$HOME/.pythonrc.py"
