@@ -10,7 +10,6 @@ ZSH_THEME="tates"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias -s sls=vim
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -43,6 +42,14 @@ source $ZSH/oh-my-zsh.sh
 ############################################
 # ALIASES                                  #
 ############################################
+
+# aliases for suffixes
+
+alias -s sls=vim
+
+# map vi to vim on redhat family
+
+alias vi='vim'
 
 # pbcopy emulation for boxes with X installed
 
