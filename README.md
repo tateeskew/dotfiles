@@ -7,6 +7,13 @@ These dotfiles are heavy on the zsh, vim, python front.  There are a few things 
 
 If you want to install and try it out, execute the bootstrap:
 
-curl -L https://raw.github.com/tateeskew/dotfiles/master/bin/bootstrap.sh | sh
+h4. via `curl`
+
+@curl -L https://raw.github.com/tateeskew/dotfiles/master/bin/bootstrap.sh | sh@
+
+h4. via `wget`
+
+@wget --no-check-certificate https://raw.github.com/tateeskew/dotfiles/master/bin/bootstrap.sh -O - | sh@
+
 
 Enjoy and feel free to issue pull requests.
