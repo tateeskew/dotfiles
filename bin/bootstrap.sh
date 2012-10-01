@@ -35,5 +35,6 @@ ensure_link "lib/dotfiles/hgignore"            ".hgignore"
 ensure_link "lib/dotfiles/pythonrc.py"         ".pythonrc.py"
 ensure_link "lib/dotfiles/bashrc"              ".bashrc"
 ensure_link "lib/dotfiles/zshrc"               ".zshrc"
+ensure_link "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-theme"
 
 echo completed
