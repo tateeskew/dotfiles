@@ -33,8 +33,17 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
+" sane movement with wrap turned on
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
 
 " Map jj to ESC to exit
 inoremap jj <ESC>
@@ -47,3 +56,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" This sets the comment string for sls (SALT) files to pound sign. The
+" " 'commentary' plugin uses this
+autocmd FileType sls set commentstring=#\ %
