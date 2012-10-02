@@ -50,4 +50,9 @@ ensure_link "lib/dotfiles/bashrc"              ".bashrc"
 ensure_link "lib/dotfiles/zshrc"               ".zshrc"
 ensure_link "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-theme"
 
+# if you are on a box that prompts for a password during the changing of the shell when oh-my-zsh installs, then this will rerun.
+chsh -s `which zsh`
+/usr/bin/env zsh
+source ~/.zshrc
+
 echo completed
