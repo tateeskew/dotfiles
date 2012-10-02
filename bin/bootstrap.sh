@@ -52,6 +52,7 @@ ensure_link "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-them
 
 # if you are on a box that prompts for a password during the changing of the shell when oh-my-zsh installs, then this will rerun.
 chsh -s `which zsh`
+sleep 10
 /usr/bin/env zsh
 source ~/.zshrc
 
