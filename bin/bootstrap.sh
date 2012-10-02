@@ -50,6 +50,4 @@ ensure_link "lib/dotfiles/bashrc"              ".bashrc"
 ensure_link "lib/dotfiles/zshrc"               ".zshrc"
 ensure_link "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-theme"
 
-/usr/bin/env zsh
-source ~/.zshrc
-chsh -s `which zsh`
+echo "Completed.  If during the Oh-My-Zsh install above you noticed an Authentication failure, you will need to run ' chsh -s $(which zsh) ' again, as it will prompt you for your password."
