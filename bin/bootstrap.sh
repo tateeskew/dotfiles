@@ -32,6 +32,8 @@ test -d ~/.hg-git/    || hg clone "https://bitbucket.org/durin42/hg-git" "$HOME/
 
 # install oh-my-zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+# sleep while password prompt. shitty hack for now
+sleep 15
 
 test -d ~/lib/dotfiles || git clone --recursive https://github.com/tateeskew/dotfiles.git ~/lib/dotfiles
 
