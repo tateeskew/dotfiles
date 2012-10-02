@@ -50,4 +50,6 @@ ensure_link "lib/dotfiles/bashrc"              ".bashrc"
 ensure_link "lib/dotfiles/zshrc"               ".zshrc"
 ensure_link "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-theme"
 
-echo completed
+/usr/bin/env zsh
+source ~/.zshrc
+chsh -s `which zsh`
