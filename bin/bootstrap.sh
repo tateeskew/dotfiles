@@ -5,7 +5,7 @@
 #exit if something fails
 set -e
 
-echo "Prerequisites: python git weechat hg ack zsh vim autojump"
+echo "Prerequisites: python git weechat hg ack zsh vim autojump (if CentOS, autojump-zsh)"
 
 command -v python >/dev/null 2>&1 || { echo >&2 "I require Python, but it's not installed.  Aborting."; exit 1; }
 command -v git >/dev/null 2>&1 || { echo >&2 "I require git, but it's not installed.  Aborting."; exit 1; }
@@ -49,11 +49,5 @@ ensure_link "lib/dotfiles/pythonrc.py"         ".pythonrc.py"
 ensure_link "lib/dotfiles/bashrc"              ".bashrc"
 ensure_link "lib/dotfiles/zshrc"               ".zshrc"
 ensure_link "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-theme"
-
-# if you are on a box that prompts for a password during the changing of the shell when oh-my-zsh installs, then this will rerun.
-chsh -s `which zsh`
-sleep 10
-/usr/bin/env zsh
-source ~/.zshrc
 
 echo completed
