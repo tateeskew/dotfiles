@@ -36,15 +36,15 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 test -d ~/lib/dotfiles || git clone --recursive https://github.com/tateeskew/dotfiles.git ~/lib/dotfiles
 
 # make backups of .bashrc or .zshrc and .vim directory
-if [ -e ~/.bashrc ] ; then
+if [ -f "~/.bashrc" ]; then
     mv ~/.bashrc ~/.bashrc.orig
 fi
 
-if [ -e ~/.zshrc ] ; then
+if [ -f "~/.zshrc" ]; then
     mv ~/.zshrc ~/.zshrc.orig
 fi
 
-if [ -d ~/.vim ] ; then
+if [ -d "~/.vim" ]; then
     mv ~/.vim ~/.vim-backup
 fi
 
