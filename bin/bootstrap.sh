@@ -32,6 +32,8 @@ test -d ~/lib/dotfiles || git clone --recursive https://github.com/tateeskew/dot
 
 # make backups of current dotfiles
 BACKUPDIR=~/$USER-dotfilebackup
+# remove previous backups
+rm -rf $BACKUPDIR
 mkdir $BACKUPDIR
 
 for file in "${FILES[@]}"; do
