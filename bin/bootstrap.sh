@@ -35,7 +35,7 @@ BACKUPDIR=~/$USER-dotfilebackup
 mkdir $BACKUPDIR
 
 for file in "${FILES[@]}"; do
-    if [ -e "$file" ]; then
+    if [ -e "$file" -o -h "$file" ]; then
         mv $file $BACKUPDIR/$file-backup
     fi
 done
