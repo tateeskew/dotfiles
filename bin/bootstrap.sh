@@ -5,7 +5,7 @@
 # let's set some stuff up
 USER=`id -un`
 PROGRAMS=('python' 'git' 'weechat-curses' 'hg' 'vim' 'zsh' 'autojump')
-FILES=('~/.vim' '~/.vimrc' '~/.gitconfig' '~/.ackrc' '~/.weechat' '~/.hgignore' '~/.pythonrc.py' '~/.zshrc' '~/.hgrc') 
+eval FILES=('~/.vim' '~/.vimrc' '~/.gitconfig' '~/.ackrc' '~/.weechat' '~/.hgignore' '~/.pythonrc.py' '~/.zshrc' '~/.hgrc') 
 
 #exit if something fails
 set -e
@@ -37,7 +37,7 @@ rm -rf $BACKUPDIR
 mkdir $BACKUPDIR
 
 for file in "${FILES[@]}"; do
-    if [ -e "$file" ] -o [-h "$file" ]; then
+    if [ -e "$file" -o -h "$file" ]; then
         mv $file $BACKUPDIR/$file-backup
     fi
 done
