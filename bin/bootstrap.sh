@@ -37,7 +37,7 @@ rm -rf $BACKUPDIR
 mkdir $BACKUPDIR
 
 for file in "${FILES[@]}"; do
-    if [ -e "$file" -o -h "$file" ]; then
+    if [ -e "$file" ] -o [-h "$file" ]; then
         mv $file $BACKUPDIR/$file-backup
     fi
 done
