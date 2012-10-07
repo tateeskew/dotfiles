@@ -38,7 +38,7 @@ mkdir $BACKUPDIR
 
 for file in "${FILES[@]}"; do
     if [ -e "$file" ]; then
-        mv $file $BACKUPDIR/$file-backup
+        mv $file $BACKUPDIR/.
     fi
 done
 
