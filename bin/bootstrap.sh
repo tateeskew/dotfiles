@@ -31,7 +31,7 @@ test -d ~/.hg-git/    || hg clone "https://bitbucket.org/durin42/hg-git" "$HOME/
 
 
 # install oh-my-zsh
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | /bin/bash
 
 test -d ~/lib/dotfiles || git clone --recursive https://github.com/tateeskew/dotfiles.git ~/lib/dotfiles
 
