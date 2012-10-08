@@ -15,6 +15,26 @@ syntax enable
 set nocompatible
 set ruler
 
+" Setup swap, backup and persistent undoj
+
+set noswapfile
+set backup
+
+set undodir=~/.vim/tmp/undo//     " undo files
+set backupdir=~/.vim/tmp/backup// " backups
+set directory=~/.vim/tmp/swap//   " swap files
+
+" Make those folders automatically if they don't already exist.
+if !isdirectory(expand(&undodir))
+    call mkdir(expand(&undodir), "p")
+endif
+if !isdirectory(expand(&backupdir))
+    call mkdir(expand(&backupdir), "p")
+endif
+if !isdirectory(expand(&directory))
+    call mkdir(expand(&directory), "p")
+endif
+
 " Set leader key to the comma instead of backslash
 let mapleader = ","
 
