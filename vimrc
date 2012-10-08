@@ -1,12 +1,12 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
-filetype plugin indent on
 
 set nocompatible
 set ruler
 set history=1000
 set undofile
 set undoreload=10000
+filetype plugin indent on
 
 " Gotta have the indention stuffs for Python
 set tabstop=4
