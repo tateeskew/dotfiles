@@ -2,6 +2,12 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 filetype plugin indent on
 
+set nocompatible
+set ruler
+set history=1000
+set undofile
+set undoreload=10000
+
 " Gotta have the indention stuffs for Python
 set tabstop=4
 set shiftwidth=4
@@ -12,17 +18,14 @@ set expandtab
 " Enable syntax already, would you.
 syntax enable
 
-set nocompatible
-set ruler
-
 " Setup swap, backup and persistent undoj
 
 set noswapfile
 set backup
 
-set undodir=~/.vim/tmp/undo//     " undo files
-set backupdir=~/.vim/tmp/backup// " backups
-set directory=~/.vim/tmp/swap//   " swap files
+set undodir=~/.vim/tmp/undo/      " undo files
+set backupdir=~/.vim/tmp/backup/  " backups
+set directory=~/.vim/tmp/swap/    " swap files
 
 " Make those folders automatically if they don't already exist.
 if !isdirectory(expand(&undodir))
