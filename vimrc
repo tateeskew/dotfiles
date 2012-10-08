@@ -57,6 +57,16 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Would you please paste correctly
+nnoremap <F2> :set invpaste paste?<CR>
+imap <F2> <C-O>:set invpaste paste?<CR>
+set pastetoggle=<F2>
+
+" Easier to type, I hate the normal bindings 
+noremap H ^
+noremap L $
+vnoremap L g_
+
 " This sets the comment string for sls (SALT) files to pound sign. The
 " " 'commentary' plugin uses this
 autocmd FileType sls set commentstring=#\ %
