@@ -78,16 +78,21 @@ alias mkdir="mkdir -p"
 # Set term colors to 256
 TERM=xterm-256color
 
-# Grab my AWS keys
-if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
-    source ~/Documents/AWSInformation/tates_aws_keys
-fi
+# Let's set some env variables
+export HISTSIZE=1000
+export HISTFILESIZE=1000
+export HISTCONTROL=erasedups
+export EDITOR='vim'
+export GREP_OPTIONS='--color=auto'
 
 # Grab my python settings
 export PYTHONSTARTUP="$HOME/.pythonrc.py"
 
-# Set VIM bindings
-#bindkey -v
-
+# Mercurial and PATH
 export DRS_HG_TOOLS=~/Tools/drs-hg-tools/
 export PATH=/home/teskew/.venvburrito/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+
+# Grab my AWS keys
+if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
+    source ~/Documents/AWSInformation/tates_aws_keys
+fi
