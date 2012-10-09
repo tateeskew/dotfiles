@@ -1,6 +1,7 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+set wildmenu
 set nocompatible
 set ruler
 set history=1000
