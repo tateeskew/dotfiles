@@ -8,6 +8,7 @@ set history=1000
 set undofile
 set undoreload=10000
 filetype plugin indent on
+set ls=2
 
 " Gotta have the indention stuffs for Python
 set tabstop=4
