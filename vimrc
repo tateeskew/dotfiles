@@ -1,6 +1,8 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+colorscheme ron 
+
 set wildmenu
 set nocompatible
 set ruler
@@ -101,7 +103,7 @@ vnoremap L g_
 
 " This sets the comment string for sls (SALT) files to pound sign. The
 " " 'commentary' plugin uses this
-autocmd FileType sls set commentstring=#\ %
+autocmd FileType sls set commentstring=#\ %s
 
 " jump to last position of buffer when opening
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
