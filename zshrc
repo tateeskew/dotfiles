@@ -78,7 +78,8 @@ alias ll="ls -lh"
 ############################################
 
 # Set term colors to 256 - I use byobu/tmux, so screen-256color is what I set it to so weechat works as expected
-TERM=screen-256color
+TERM=xterm-256color
+#TERM=screen-256color
 
 # Let's set some env variables
 export HISTSIZE=1000
