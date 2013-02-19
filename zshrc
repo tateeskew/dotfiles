@@ -60,8 +60,8 @@ alias paste='xsel --clipboard --output'
 
 alias o='xdg-open'
 
-# Add an "alert" alias for long running commands.  Use like so:
-# #   sleep 10; alert
+#Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias sz='source ~/.zshrc'
 
@@ -69,7 +69,7 @@ alias sz='source ~/.zshrc'
 alias ..="cd ../"
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias dotf="cd $HOME/lib/dotfiles"
+alias dotfiles="cd $HOME/lib/dotfiles"
 alias mkdir="mkdir -p"
 alias ll="ls -lh"
 
@@ -77,8 +77,13 @@ alias ll="ls -lh"
 # VARIOUS SETTINGS                         #
 ############################################
 
-# Set term colors to 256 - I use byobu/tmux, so screen-256color is what I set it to so weechat works as expected
-TERM=screen-256color
+# zsh quit trying to correct every goddamn thing i use through sudo!
+CORRECT_IGNORE='[._]*'
+
+
+# Set term colors to 256 - If you use byobu/tmux, use the screen-256color line.  This will make it so weechat works as expected.
+TERM=xterm-256color
+#TERM=screen-256color
 
 # Let's set some env variables
 export HISTSIZE=1000
@@ -92,7 +97,7 @@ export PYTHONSTARTUP="$HOME/.pythonrc.py"
 
 # Mercurial and PATH
 export DRS_HG_TOOLS=~/Tools/drs-hg-tools/
-export PATH=/home/teskew/.venvburrito/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=/home/teskew/.venvburrito/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games
 
 # Grab my AWS keys
 if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
