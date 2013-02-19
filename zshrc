@@ -77,15 +77,11 @@ alias ll="ls -lh"
 # VARIOUS SETTINGS                         #
 ############################################
 
-<<<<<<< HEAD
 # zsh quit trying to correct every goddamn thing i use through sudo!
 CORRECT_IGNORE='[._]*'
 
 
 # Set term colors to 256 - If you use byobu/tmux, use the screen-256color line.  This will make it so weechat works as expected.
-=======
-# Set term colors to 256 - I use byobu/tmux, so screen-256color is what I set it to so weechat works as expected
->>>>>>> a3877197a56a1c1aeb99ab92d63d66a324b81ff8
 TERM=xterm-256color
 #TERM=screen-256color
 
