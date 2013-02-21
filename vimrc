@@ -91,11 +91,11 @@ imap <F2> <C-O>:set invpaste paste?<CR>
 set pastetoggle=<F2>
 
 " System clipboard interaction.  Mostly from:
-" https://github.com/henrik/dotfiles/blob/master/vim/config/mappings.vim
-noremap <leader>y "*y
-noremap <leader>p :set paste<CR>"*p<CR>:set nopaste<CR>
-noremap <leader>P :set paste<CR>"*P<CR>:set nopaste<CR>
-vnoremap <leader>y "*ygv
+" Use the + register if on Linux and the * register if using OSX
+noremap <leader>y "+y
+noremap <leader>p :set paste<CR>"+p<CR>:set nopaste<CR>
+noremap <leader>P :set paste<CR>"+P<CR>:set nopaste<CR>
+vnoremap <leader>y "+ygv
 
 " Easier to type, I hate the normal bindings 
 noremap H ^

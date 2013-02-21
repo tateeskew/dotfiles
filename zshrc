@@ -29,7 +29,7 @@ ZSH_THEME="tates"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump pip command-not-found vagrant git mercurial vi-mode)
+plugins=(autojump pip command-not-found vagrant git mercurial vi-mode extract)
 
 source $ZSH/oh-my-zsh.sh
 
