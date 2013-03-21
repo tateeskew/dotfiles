@@ -77,6 +77,10 @@ alias ll="ls -lh"
 # VARIOUS SETTINGS                         #
 ############################################
 
+# options
+
+setopt extended_history
+
 # zsh quit trying to correct every goddamn thing i use through sudo!
 CORRECT_IGNORE='[._]*'
 

@@ -28,9 +28,9 @@ syntax enable
 set noswapfile
 set backup
 
-set undodir=~/.vim/tmp/undo/      " undo files
-set backupdir=~/.vim/tmp/backup/  " backups
-set directory=~/.vim/tmp/swap/    " swap files
+set undodir=/tmp/vim/undo/      " undo files
+set backupdir=/tmp/vim/backup/  " backups
+set directory=/tmp/vim/swap/    " swap files
 
 " Make those folders automatically if they don't already exist.
 if !isdirectory(expand(&undodir))
