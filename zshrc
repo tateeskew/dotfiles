@@ -80,6 +80,9 @@ alias ll="ls -lh"
 # options
 
 setopt extended_history
+setopt auto_cd
+setopt no_cdable_vars # don't use named directories in cd autocompletion damnit.
+setopt no_nomatch # if there are no matches for globs, leave them alone and execute the command
 
 # zsh quit trying to correct every goddamn thing i use through sudo!
 CORRECT_IGNORE='[._]*'
