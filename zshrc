@@ -85,8 +85,7 @@ setopt no_cdable_vars # don't use named directories in cd autocompletion damnit.
 setopt no_nomatch # if there are no matches for globs, leave them alone and execute the command
 
 # zsh quit trying to correct every goddamn thing i use through sudo!
-CORRECT_IGNORE='[._]*'
-
+alias sudo='nocorrect sudo'
 
 # Set term colors to 256 - If you use byobu/tmux, use the screen-256color line.  This will make it so weechat works as expected.
 TERM=xterm-256color
