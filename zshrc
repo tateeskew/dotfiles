@@ -101,8 +101,7 @@ export GREP_OPTIONS='--color=auto'
 # Grab my python settings
 export PYTHONSTARTUP="$HOME/.pythonrc.py"
 
-# Mercurial and PATH
-export DRS_HG_TOOLS=~/Tools/drs-hg-tools/
+# PATH
 export PATH=/home/teskew/.venvburrito/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games
 
 # Grab my AWS keys
