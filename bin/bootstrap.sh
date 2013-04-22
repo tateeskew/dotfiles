@@ -4,7 +4,7 @@
 
 # let's set some stuff up
 USER=`id -un`
-PROGRAMS=('python' 'git' 'weechat-curses' 'hg' 'vim' 'zsh' 'autojump')
+eval PROGRAMS=('python' 'git' 'weechat-curses' 'hg' 'vim' 'zsh' 'autojump')
 eval FILES=('~/.vim' '~/.vimrc' '~/.gitconfig' '~/.ackrc' '~/.weechat' '~/.hgignore' '~/.pythonrc.py' '~/.zshrc' '~/.hgrc') 
 
 #exit if something fails
