@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/teskew/.weechat'
+let g:netrw_dirhist_2='/home/teskew/.mission-control/accounts/gabble/jabber'
+let g:netrw_dirhist_3='/home/teskew/Documents/configuration-management/salt/dev/central-syslog/logstash'
+let g:netrw_dirhist_4='/home/teskew/postinstall/postinstall/prereq'

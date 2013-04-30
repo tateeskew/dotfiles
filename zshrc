@@ -110,7 +110,7 @@ bindkey -M viins "\eOB" down-line-or-history
 export PYTHONSTARTUP="$HOME/.pythonrc.py"
 
 # PATH
-export PATH=/home/teskew/.venvburrito/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games
+export PATH=/home/teskew/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games
 
 # Grab my AWS keys
 if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
