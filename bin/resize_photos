@@ -1,0 +1,3 @@
+#!/bin/bash
+
+for file in *.JPG; do convert -resize 1624x1080 -- "$file" "${file%%.JPG}-resized.jpg"; done
