@@ -54,7 +54,24 @@ set incsearch
 set showmatch
 set hlsearch
 
-" Clear a serach by typing (,space)
+" This rewires n and N to do the highlighing...
+nnoremap <silent> n   n:call HLNext(0.4)<cr>
+nnoremap <silent> N   N:call HLNext(0.4)<cr>
+highlight WhiteOnRed ctermbg=green ctermfg=white
+
+" highlight the search match in red...
+    function! HLNext (blinktime)
+        let [bufnum, lnum, col, off] = getpos('.')
+        let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+        let target_pat = '\c\%#'.@/
+        let ring = matchadd('WhiteOnRed', target_pat, 101)
+        redraw
+        exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+        call matchdelete(ring)
+        redraw
+    endfunction
+
+" Clear a search by typing (,space)
 nnoremap <leader><space> :noh<cr>
 
 " Move around to bracket pairs using TAB instead of %

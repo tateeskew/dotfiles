@@ -73,6 +73,12 @@ alias dotfiles="cd $HOME/lib/dotfiles"
 alias mkdir="mkdir -p"
 alias ll="ls -lh"
 
+searchgithistory() {
+
+    git grep $1 $(git rev-list --all)
+}
+alias gg="searchgithistory"
+
 ############################################
 # VARIOUS SETTINGS                         #
 ############################################
@@ -116,6 +122,8 @@ export PATH=/home/teskew/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/
 if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
     source ~/Documents/AWSInformation/tates_aws_keys
 fi
+
+ssh-add ~/.ssh/*.pem
 
 
 ###########################################
