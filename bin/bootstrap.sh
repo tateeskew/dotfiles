@@ -55,7 +55,7 @@ symlink "lib/dotfiles/zshrc"               ".zshrc"
 symlink "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-theme"
 
 # cp binaries/scripts
-cp lib/dofiles//bin/* bin/.
+cp lib/dotfiles//bin/* bin/.
 
 # install hg-git
 test -d ~/.hg-git/ || hg clone "https://bitbucket.org/durin42/hg-git" "$HOME/.hg-git"
