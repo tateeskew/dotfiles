@@ -46,6 +46,9 @@ endif
 " Set leader key to the comma instead of backslash
 let mapleader = ","
 
+" Save a file as root (,W)
+noremap <leader>W :w !sudo tee % > /dev/null<CR>
+
 " Some search stuff I like
 set ignorecase
 set smartcase
