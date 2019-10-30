@@ -66,6 +66,10 @@ alias pacro='sudo paclo && sudo pacman -Rns $(pacman -Qtdq)' # remove orphans
 alias pacc='sudo pacman -Scc'    # clean cache
 alias paclf='sudo pacman -Ql'   # list files
 
+#yay aliases
+alias yay='yay -S' #install
+alias yays='yay -s' #search
+
 # pbcopy emulation for boxes with X installed
 
 alias copy='xsel --clipboard --input'
