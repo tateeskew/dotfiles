@@ -97,7 +97,20 @@ alias ....="cd ../../.."
 alias dotfiles="cd $HOME/lib/dotfiles"
 alias mkdir="mkdir -p"
 alias ll="ls -lh"
+alias du="du -h"
+alias df="df -h"
+alias lnew='ls *(.om[1,3])' # list three newest
+alias lh='ls -d .*' # only hidden files
 
+# network stuff
+alias spy='lsof -i -P +c 0 +M'
+alias netlist='lsof -i -P | grep LISTEN'
+
+# grab youtube stuff
+alias ytvid='youtube-dl --restrict-filenames -o "~/mus/vid/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
+alias ytaudio='youtube-dl --restrict-filenames --extract-audio -o "~/mus/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
+
+#Search Git history
 searchgithistory() {
 
     git grep $1 $(git rev-list --all)
@@ -156,6 +169,60 @@ fi
 
 ssh-add ~/.ssh/*.pem
 
+
+###########################################
+# PASTEBIN PUSH                           #
+###########################################
+
+#whole file put
+function pbf()
+{
+    local url='https://paste.c-net.org/'
+    if (( $# )); then
+        local file
+        for file; do
+            curl -s \
+                --data-binary @"$file" \
+                --header "X-FileName: ${file##*/}" \
+                "$url"
+        done
+    else
+        curl -s --data-binary @- "$url"
+    fi
+}
+
+#text put
+function pbf()
+{
+    local url='https://paste.c-net.org/'
+    if (( $# )); then
+        local text
+        for text; do
+            curl -s \
+                --data "$text" \
+                "$url"
+        done
+    else
+        curl -s --data @- "$url"
+    fi
+}
+
+#get
+function pg()
+{
+    local url='https://paste.c-net.org/'
+    if (( $# )); then
+        local arg
+        for arg; do
+            curl -s "${url}${arg##*/}"
+        done
+    else
+        local arg
+        while read -r arg; do
+            curl -s "${url}${arg##*/}"
+        done
+    fi
+}
 
 ###########################################
 # HOW MUCH RAM IS A PROCESS USING         #
