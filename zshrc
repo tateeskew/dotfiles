@@ -29,7 +29,7 @@ ZSH_THEME="tates"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump pip command-not-found vagrant git mercurial vi-mode extract)
+plugins=(autojump pip command-not-found vagrant git vi-mode extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -42,6 +42,12 @@ source $ZSH/oh-my-zsh.sh
 ############################################
 # ALIASES                                  #
 ############################################
+# grep aliases
+# Move export GREP_OPTIONS="--color=auto" (which is deprecated) from env variable to alias
+# Always enable colored `grep` output`
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
 
 # aliases for suffixes
 
@@ -98,6 +104,13 @@ searchgithistory() {
 }
 alias gg="searchgithistory"
 
+# Search files fast
+f() {
+    echo "find . -iname \"*$1*\""
+    find . -iname "*$1*"
+}
+
+
 ############################################
 # VARIOUS SETTINGS                         #
 ############################################
@@ -121,7 +134,6 @@ export HISTSIZE=1000
 export HISTFILESIZE=1000
 export HISTCONTROL=erasedups
 export EDITOR='vim'
-export GREP_OPTIONS='--color=auto'
 
 # Debian / Ubuntu sets these to vi-up-line-or-history etc,
 # # which places the cursor at the start of line, not end of line.
