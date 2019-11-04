@@ -1,6 +1,3 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-
 colorscheme ron 
 
 set wildmenu
@@ -92,6 +89,9 @@ vnoremap <Down> gj
 vnoremap <Up> gk
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
+
+" Easymotion - leader f - jump anywhere
+nnoremap f H:call EasyMotion#WB(0, 0)<CR>
 
 " Map jj to ESC to exit
 inoremap jj <ESC>

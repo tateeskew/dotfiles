@@ -143,8 +143,8 @@ TERM=xterm-256color
 #TERM=screen-256color
 
 # Let's set some env variables
-export HISTSIZE=1000
-export HISTFILESIZE=1000
+export HISTSIZE=100000
+export HISTFILESIZE=100000
 export HISTCONTROL=erasedups
 export EDITOR='vim'
 
