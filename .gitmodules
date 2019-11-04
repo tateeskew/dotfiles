@@ -1,6 +1,3 @@
-[submodule "vim/pack/tate/start/Command-T"]
-	path = vim/pack/tate/start/Command-T
-	url = https://github.com/wincent/Command-T.git
 [submodule "vim/pack/tate/start/ack"]
 	path = vim/pack/tate/start/ack
 	url = git://github.com/mileszs/ack.vim.git
