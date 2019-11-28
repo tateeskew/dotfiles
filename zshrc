@@ -29,7 +29,7 @@ ZSH_THEME="tates"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump pip command-not-found vagrant git vi-mode extract)
+plugins=(archlinux autojump copyfile command-not-found docker extract git pip vagrant vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -49,6 +49,9 @@ alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 
+# KILL evolution processes
+alias killev='kill -9 $(pgrep evolution)'
+
 # aliases for suffixes
 
 alias -s sls=vim
@@ -62,19 +65,15 @@ alias se='sudoedit'
 
 #pacman aliases
 
-alias pac='sudo pacman -S'   # install
-alias pacu='sudo pacman -Syu'    # update, add 'a' to the list of letters to update AUR packages if you use yaourt
-alias pacr='sudo pacman -Rs'   # remove
-alias pacs='sudo pacman -Ss'      # search
-alias paci='sudo pacman -Si'      # info
-alias paclo='sudo pacman -Qdt'    # list orphans
-alias pacro='sudo paclo && sudo pacman -Rns $(pacman -Qtdq)' # remove orphans
-alias pacc='sudo pacman -Scc'    # clean cache
-alias paclf='sudo pacman -Ql'   # list files
-
-#yay aliases
-alias yay='yay -S' #install
-alias yays='yay -s' #search
+# alias pac='sudo pacman -S'   # install
+# alias pacu='sudo pacman -Syu'    # update, add 'a' to the list of letters to update AUR packages if you use yaourt
+# alias pacr='sudo pacman -Rs'   # remove
+# alias pacs='sudo pacman -Ss'      # search
+# alias paci='sudo pacman -Si'      # info
+# alias paclo='sudo pacman -Qdt'    # list orphans
+# alias pacro='sudo paclo && sudo pacman -Rns $(pacman -Qtdq)' # remove orphans
+# alias pacc='sudo pacman -Scc'    # clean cache
+# alias paclf='sudo pacman -Ql'   # list files
 
 # pbcopy emulation for boxes with X installed
 
@@ -88,6 +87,9 @@ alias o='xdg-open'
 #Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+#zshrc file
+alias zshrc='${=EDITOR} ~/.zshrc'
 alias sz='source ~/.zshrc'
 
 # filesystem stuff
@@ -168,6 +170,11 @@ if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
 fi
 
 ssh-add ~/.ssh/*.pem
+
+#ENV Variables
+
+#Set aws-vault backend to gnome-keyring
+export AWS_VAULT_BACKEND=secret-service
 
 
 ###########################################

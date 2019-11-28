@@ -106,9 +106,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Would you please paste correctly
-nnoremap <F2> :set invpaste paste?<CR>
-imap <F2> <C-O>:set invpaste paste?<CR>
-set pastetoggle=<F2>
+nnoremap <leader>v :set invpaste paste?<CR>
+imap <leader>v <C-O>:set invpaste paste?<CR>
+set pastetoggle=<leader>v
 
 " System clipboard interaction.  Mostly from:
 " Use the + register if on Linux and the * register if using OSX
@@ -125,6 +125,7 @@ vnoremap L g_
 " This sets the comment string for sls (SALT) files to pound sign. The
 " " 'commentary' plugin uses this
 autocmd FileType sls set commentstring=#\ %s
+autocmd FileType tf set commentstring=#\ %s
 
 " jump to last position of buffer when opening
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
