@@ -1,3 +1,6 @@
+"Powerline Arch Python3
+let g:powerline_pycmd = 'py3'
+
 colorscheme ron 
 
 set wildmenu

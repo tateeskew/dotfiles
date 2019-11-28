@@ -29,7 +29,7 @@ ZSH_THEME="tates"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux autojump copyfile command-not-found docker extract git pip vagrant vi-mode)
+plugins=(archlinux autojump copyfile command-not-found docker extract git pip tmuxinator vagrant vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,6 +38,10 @@ source $ZSH/oh-my-zsh.sh
 #################################################################################################
 #Tate's Customizations
 #################################################################################################
+
+# Grab tmuxinator autocomplete
+
+source ~/bin/tmuxinator.zsh
 
 ############################################
 # ALIASES                                  #
