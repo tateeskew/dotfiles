@@ -12,13 +12,25 @@ set undoreload=10000
 filetype plugin on
 filetype indent on
 set ls=2
+set nu
 
-" Gotta have the indention stuffs for Python
+" Gotta have the indention for defaults
 set tabstop=4
 set shiftwidth=4
 set smarttab
 set softtabstop=4
 set expandtab
+set fileformat=unix
+
+" Set specifics for Python
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
 
 " Enable syntax already, would you.
 syntax enable
