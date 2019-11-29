@@ -11,8 +11,10 @@ set undofile
 set undoreload=10000
 filetype plugin on
 filetype indent on
-set ls=2
-set nu
+set laststatus=2
+set number
+set encoding=utf8
+set cursorline
 
 " Gotta have the indention for defaults
 set tabstop=4
@@ -24,12 +26,12 @@ set fileformat=unix
 
 " Set specifics for Python
 au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
     \ set fileformat=unix
 
 " Enable syntax already, would you.
@@ -107,6 +109,9 @@ inoremap <Up> <C-o>gk
 
 " Easymotion - leader f - jump anywhere
 nnoremap f H:call EasyMotion#WB(0, 0)<CR>
+
+" Nertree - leader o - open Nerdtree
+map <leader>o :NERDTreeToggle<CR>
 
 " Map jj to ESC to exit
 inoremap jj <ESC>
