@@ -12,9 +12,7 @@ set undoreload=10000
 filetype plugin on
 filetype indent on
 set laststatus=2
-set number
 set encoding=utf8
-set cursorline
 
 " Gotta have the indention for defaults
 set tabstop=4
