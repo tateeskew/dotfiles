@@ -96,6 +96,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias zshrc='${=EDITOR} ~/.zshrc'
 alias sz='source ~/.zshrc'
 
+#edit vimrc file
+alias vimrc='${=EDITOR} ~/.vimrc'
+
 # filesystem stuff
 alias ..="cd ../"
 alias ...="cd ../.."
@@ -111,6 +114,9 @@ alias lh='ls -d .*' # only hidden files
 # network stuff
 alias spy='lsof -i -P +c 0 +M'
 alias netlist='lsof -i -P | grep LISTEN'
+
+# silver ag
+alias ag='ag --hidden -f'
 
 # grab youtube stuff
 alias ytvid='youtube-dl --restrict-filenames -o "~/mus/vid/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
@@ -164,6 +170,9 @@ bindkey -M viins "\eOB" down-line-or-history
 
 # Grab my python settings
 export PYTHONSTARTUP="$HOME/.pythonrc.py"
+
+# CareBridge VPN stuff
+alias devtunnel='sshuttle -NHvr bastion.dev.carebridgehealth.com'
 
 # PATH
 export PATH=/home/teskew/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games
