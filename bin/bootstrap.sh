@@ -4,13 +4,13 @@
 
 # let's set some stuff up
 USER=`id -un`
-eval PROGRAMS=('python' 'git' 'vim' 'zsh' 'autojump')
+eval PROGRAMS=('byobu' 'python' 'git' 'vim' 'zsh' 'autojump')
 eval FILES=('~/.vim' '~/.vimrc' '~/.gitconfig' '~/.ackrc' '~/.pythonrc.py' '~/.zshrc') 
 
 #exit if something fails
 set -e
 
-echo "Prerequisites: python git ack zsh vim autojump (if CentOS, autojump-zsh)"
+echo "Prerequisites: byobu python git ack zsh vim autojump (if CentOS, autojump-zsh)"
 
 for program in "${PROGRAMS[@]}"; do
     command -v $program >/dev/null 2>&1 || { echo >&2 "I require $program, but it's not installed.  Aborting."; exit 1; }
@@ -49,6 +49,9 @@ symlink "lib/dotfiles/ackrc"               ".ackrc"
 symlink "lib/dotfiles/pythonrc.py"         ".pythonrc.py"
 symlink "lib/dotfiles/zshrc"               ".zshrc"
 symlink "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-theme"
+
+#install tmuxterm.txt to get italics, strikethrough, underline, etc
+tic -x tmuxterm.txt
 
 # cp binaries/scripts
 cp ~/lib/dotfiles/bin/* ~/bin/.

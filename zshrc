@@ -119,8 +119,8 @@ alias netlist='lsof -i -P | grep LISTEN'
 alias ag='ag --hidden -f'
 
 # grab youtube stuff
-alias ytvid='youtube-dl --restrict-filenames -o "~/mus/vid/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
-alias ytaudio='youtube-dl --restrict-filenames --extract-audio -o "~/mus/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
+alias ytvid='youtube-dl --restrict-filenames -o "~/Music/vid/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
+alias ytaudio='youtube-dl --restrict-filenames --extract-audio -o "~/Music/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
 
 #Search Git history
 searchgithistory() {
@@ -151,8 +151,8 @@ setopt no_nomatch # if there are no matches for globs, leave them alone and exec
 alias sudo='nocorrect sudo'
 
 # Set term colors to 256 - If you use byobu/tmux, use the screen-256color line.  This will make it so weechat works as expected.
-TERM=xterm-256color
-#TERM=screen-256color
+#TERM=xterm-256color
+TERM=tmux-256color
 
 # Let's set some env variables
 export HISTSIZE=100000

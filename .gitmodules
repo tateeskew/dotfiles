@@ -10,3 +10,6 @@
 [submodule "vim/pack/tate/start/vim-easymotion"]
 	path = vim/pack/tate/start/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "vim/pack/tate/start/nerdtree"]
+	path = vim/pack/tate/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree

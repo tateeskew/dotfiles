@@ -1,7 +1,13 @@
 "Powerline Arch Python3
 let g:powerline_pycmd = 'py3'
 
-colorscheme ron 
+" set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
+let g:gruvbox_italic=1
+set bg=dark
+colorscheme gruvbox
 
 set wildmenu
 set nocompatible
@@ -108,6 +114,21 @@ inoremap <Up> <C-o>gk
 
 " Easymotion - leader f - jump anywhere
 nnoremap f H:call EasyMotion#WB(0, 0)<CR>
+
+" Easymotion  <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" Move to line
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
+
+" Easymotion search instead of native vim search
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+
 
 " Nertree - leader o - open Nerdtree
 map <leader>o :NERDTreeToggle<CR>
