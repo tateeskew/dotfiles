@@ -49,6 +49,7 @@ symlink "lib/dotfiles/ackrc"               ".ackrc"
 symlink "lib/dotfiles/pythonrc.py"         ".pythonrc.py"
 symlink "lib/dotfiles/zshrc"               ".zshrc"
 symlink "lib/dotfiles/tates.zsh-theme"     ".oh-my-zsh/themes/tates.zsh-theme"
+symlink "lib/dotfiles/tmux.conf"           ".byobu/.tmux.conf"
 
 #install tmuxterm.txt to get italics, strikethrough, underline, etc
 tic -x tmuxterm.txt
