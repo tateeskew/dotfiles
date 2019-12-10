@@ -1,3 +1,4 @@
+abricotine-bin
 ack
 adobe-base-14-fonts
 adobe-source-sans-pro-fonts
@@ -86,6 +87,7 @@ gnome-weather
 google-chrome
 grilo-plugins
 grub
+gtkspell3
 gvfs
 gvfs-afc
 gvfs-goa
@@ -103,6 +105,7 @@ intel-ucode
 kakoune-git
 keybase-bin
 libappindicator-gtk3
+libreoffice-fresh
 linux
 linux-firmware
 linux-headers
@@ -110,6 +113,7 @@ m4
 make
 man-db
 man-pages
+marker
 mattermost-desktop
 mlocate
 mousetweaks
@@ -118,6 +122,7 @@ mutter
 nautilus
 nautilus-share
 neofetch
+nerd-fonts-fira-code
 netctl
 networkmanager
 networkmanager-openvpn
@@ -139,7 +144,6 @@ python-boto3
 python-click
 python-pip
 python2-requests
-remarkable
 ringcentral-meetings-bin
 rsync
 rygel
@@ -160,6 +164,7 @@ the_silver_searcher
 tlp
 tlp-rdw
 tlpui-git
+tmux
 tmuxinator
 totem
 tracker
@@ -182,6 +187,7 @@ vlc
 vpnc
 wget
 which
+whois
 wireless_tools
 wpa_supplicant
 xdg-desktop-portal-gtk
