@@ -46,6 +46,7 @@ gcc
 gdm
 gedit
 gimp
+gist
 git
 gnome-backgrounds
 gnome-books
@@ -173,6 +174,7 @@ tree
 ttf-caladea
 ttf-carlito
 ttf-croscore
+ttf-fira-code
 ttf-gelasio-ib
 ttf-liberation
 ttf-liberation-sans-narrow
