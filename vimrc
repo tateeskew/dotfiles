@@ -162,6 +162,9 @@ noremap H ^
 noremap L $
 vnoremap L g_
 
+" let g:indentLine_setColors = 0
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
 " This sets the comment string for sls (SALT) files to pound sign. The
 " " 'commentary' plugin uses this
 autocmd FileType sls set commentstring=#\ %s

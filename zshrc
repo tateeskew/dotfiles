@@ -29,7 +29,7 @@ ZSH_THEME="tates"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux autojump copyfile command-not-found docker extract git pip tmuxinator vagrant vi-mode)
+plugins=(archlinux autojump copyfile command-not-found docker extract git git-prompt go pip tmuxinator vagrant vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,18 +66,6 @@ alias vi='vim'
 
 #map sudoedit
 alias se='sudoedit'
-
-#pacman aliases
-
-# alias pac='sudo pacman -S'   # install
-# alias pacu='sudo pacman -Syu'    # update, add 'a' to the list of letters to update AUR packages if you use yaourt
-# alias pacr='sudo pacman -Rs'   # remove
-# alias pacs='sudo pacman -Ss'      # search
-# alias paci='sudo pacman -Si'      # info
-# alias paclo='sudo pacman -Qdt'    # list orphans
-# alias pacro='sudo paclo && sudo pacman -Rns $(pacman -Qtdq)' # remove orphans
-# alias pacc='sudo pacman -Scc'    # clean cache
-# alias paclf='sudo pacman -Ql'   # list files
 
 # pbcopy emulation for boxes with X installed
 
@@ -174,8 +162,13 @@ export PYTHONSTARTUP="$HOME/.pythonrc.py"
 # CareBridge VPN stuff
 alias devtunnel='sshuttle -NHvr bastion.dev.carebridgehealth.com'
 
+# Terraform stuff
+alias tplan='aws-vault exec carebridge-terraform -- terraform plan'
+alias tapply='aws-vault exec carebridge-terraform -- terraform apply'
+alias tinit='aws-vault exec carebridge-terraform -- terraform init'
+
 # PATH
-export PATH=/home/teskew/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games
+export PATH=~/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games:~/.gem/ruby/2.6.0/bin
 
 # Grab my AWS keys
 if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
