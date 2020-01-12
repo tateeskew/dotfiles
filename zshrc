@@ -57,23 +57,19 @@ alias egrep="egrep --color=auto"
 alias killev='kill -9 $(pgrep evolution)'
 
 # aliases for suffixes
-
 alias -s sls=vim
 
 # map vi to vim on redhat family
-
 alias vi='vim'
 
 #map sudoedit
 alias se='sudoedit'
 
-# pbcopy emulation for boxes with X installed
-
+# Commandline copy with X installed
 alias copy='xsel --clipboard --input'
 alias paste='xsel --clipboard --output'
 
 # Open files from command line
-
 alias o='xdg-open'
 
 #Add an "alert" alias for long running commands.  Use like so:
@@ -93,11 +89,15 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias dotfiles="cd $HOME/lib/dotfiles"
 alias mkdir="mkdir -p"
-alias ll="ls -lh"
+alias ls="ls -a --color"
+alias ll="ls -lahtr --color" # better output
+alias lf="ls -l | egrep -v '^d'" # list files only
+alias ldir="ls -l | egrep '^d'" # list dirs only
 alias du="du -h"
 alias df="df -h"
 alias lnew='ls *(.om[1,3])' # list three newest
 alias lh='ls -d .*' # only hidden files
+alias hs='history | grep'
 
 # network stuff
 alias spy='lsof -i -P +c 0 +M'
@@ -168,7 +168,7 @@ alias tapply='aws-vault exec carebridge-terraform -- terraform apply'
 alias tinit='aws-vault exec carebridge-terraform -- terraform init'
 
 # PATH
-export PATH=~/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games:~/.gem/ruby/2.6.0/bin
+export PATH=~/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games:~/.gem/ruby/2.7.0/bin
 
 # Grab my AWS keys
 if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then
@@ -260,3 +260,6 @@ function ram() {
     fi
   fi
 }
+
+# Fast ZSH syntax highlightin
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

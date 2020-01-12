@@ -41,8 +41,7 @@ au BufNewFile,BufRead *.py
 " Enable syntax already, would you.
 syntax enable
 
-" Setup swap, backup and persistent undoj
-
+" Setup swap, backup and persistent undo
 set noswapfile
 set backup
 
@@ -122,13 +121,6 @@ nmap <Leader>f <Plug>(easymotion-overwin-f)
 " Move to line
 map <Leader>l <Plug>(easymotion-bd-jk)
 nmap <Leader>l <Plug>(easymotion-overwin-line)
-
-" Easymotion search instead of native vim search
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
-
 
 " Nertree - leader o - open Nerdtree
 map <leader>o :NERDTreeToggle<CR>
