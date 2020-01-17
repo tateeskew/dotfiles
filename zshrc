@@ -168,7 +168,7 @@ alias tapply='aws-vault exec carebridge-terraform -- terraform apply'
 alias tinit='aws-vault exec carebridge-terraform -- terraform init'
 
 # PATH
-export PATH=~/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games:~/.gem/ruby/2.7.0/bin
+export PATH=~/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/lib/w3m:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games:~/.gem/ruby/2.7.0/bin
 
 # Grab my AWS keys
 if [[ -f ~/Documents/AWSInformation/tates_aws_keys ]]; then

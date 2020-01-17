@@ -16,8 +16,10 @@ bc
 bind-tools
 binutils
 bison
+bluez-utils
 bpftrace
 byobu
+celluloid
 cheese
 chrome-gnome-shell
 chromium
@@ -90,6 +92,7 @@ gnome-video-effects
 gnome-weather
 google-chrome
 gotop-bin
+gpmdp
 grilo-plugins
 grub
 gtk-engine-murrine
@@ -129,6 +132,7 @@ mattermost-desktop
 mediainfo
 mlocate
 mousetweaks
+mpv
 mtools
 mutter
 nautilus
@@ -172,6 +176,7 @@ slack-desktop
 smartmontools
 soundconverter
 sshuttle
+st
 strace
 sudo
 sushi
@@ -185,6 +190,7 @@ tlp-rdw
 tlpui-git
 tmux
 totem
+traceroute
 tracker
 tracker-miners
 tree
