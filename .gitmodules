@@ -13,3 +13,6 @@
 [submodule "vim/pack/tate/start/nerdtree"]
 	path = vim/pack/tate/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/pack/tate/start/vim-fugitive"]
+	path = vim/pack/tate/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
