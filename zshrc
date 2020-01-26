@@ -167,6 +167,12 @@ alias tplan='aws-vault exec carebridge-terraform -- terraform plan'
 alias tapply='aws-vault exec carebridge-terraform -- terraform apply'
 alias tinit='aws-vault exec carebridge-terraform -- terraform init'
 
+# Saw logs
+seelogs() {
+    #pass environment and log group
+    aws-vault exec cb-"$1" -- saw watch /ecs/"$1"/"$2"
+}
+
 # PATH
 export PATH=~/.venvburrito/bin:~/bin:/usr/local/bin:/usr/lib/lightdm/lightdm:/usr/lib/w3m:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/vagrant/bin:/usr/games:~/.gem/ruby/2.7.0/bin
 
