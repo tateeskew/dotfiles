@@ -165,3 +165,5 @@ autocmd FileType tf set commentstring=#\ %s
 " jump to last position of buffer when opening
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") |
                           \ exe "normal g'\"" | endif
+
+set encoding=UTF-8
