@@ -29,6 +29,7 @@ cups
 dconf-editor
 dhcpcd
 docker
+docker-compose
 dosfstools
 efibootmgr
 elinks
@@ -143,6 +144,7 @@ netctl
 networkmanager
 networkmanager-openvpn
 nfs-utils
+nmap
 nmon
 noto-fonts
 noto-fonts-emoji
@@ -164,10 +166,12 @@ python-nautilus
 python-pip
 python2-requests
 ranger
+remmina
 ringcentral-meetings-bin
 rsync
 rygel
 saw
+seahorse
 seahorse-nautilus
 simple-scan
 simplenote-electron-bin
