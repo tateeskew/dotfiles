@@ -108,6 +108,7 @@ gvfs-smb
 gvim
 handbrake
 highlight
+hplip
 htop
 inetutils
 insync
@@ -164,6 +165,7 @@ python-boto3
 python-click
 python-nautilus
 python-pip
+python-pyqt5
 python2-requests
 ranger
 remmina
