@@ -2,6 +2,7 @@ abricotine-bin
 ack
 adobe-base-14-fonts
 adobe-source-sans-pro-fonts
+ansible
 aptible-cli
 arc-gtk-theme
 arc-icon-theme
@@ -47,6 +48,7 @@ firefox
 flatpak
 flex
 fsarchiver
+fwupd
 gcc
 gdm
 gdm3setup
@@ -140,6 +142,7 @@ nautilus
 nautilus-share
 nautilus-terminal
 neofetch
+nerd-fonts-cascadia-code
 nerd-fonts-fira-code
 netctl
 networkmanager
@@ -161,6 +164,7 @@ pkgfile
 plasma-meta
 powerline-fonts
 powerline-vim
+python-boto
 python-boto3
 python-click
 python-nautilus
