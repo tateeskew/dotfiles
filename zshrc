@@ -29,7 +29,7 @@ ZSH_THEME="tates"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux autojump copyfile command-not-found docker extract git git-prompt go pip tmuxinator vagrant vi-mode)
+plugins=(archlinux autojump copyfile command-not-found docker extract git git-prompt go pip tmuxinator vagrant vi-mode zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,8 +89,9 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias dotfiles="cd $HOME/lib/dotfiles"
 alias mkdir="mkdir -p"
-alias ls="ls -a --color"
+alias ls="ls --color"
 alias ll="ls -lahtr --color" # better output
+alias lll="LC_COLLATE=C ls -alF"
 alias lf="ls -l | egrep -v '^d'" # list files only
 alias ldir="ls -l | egrep '^d'" # list dirs only
 alias du="du -h"
@@ -98,10 +99,15 @@ alias df="df -h"
 alias lnew='ls *(.om[1,3])' # list three newest
 alias lh='ls -d .*' # only hidden files
 alias hs='history | grep'
+alias shrug="echo '¯\\_(ツ)_/¯'"
 
 # network stuff
 alias spy='lsof -i -P +c 0 +M'
 alias netlist='lsof -i -P | grep LISTEN'
+
+#carebridge sftp
+alias psftp='ssh -i ~/.ssh/id_rsa sftp.prd.carebridgehealth.com'
+alias dsftp='ssh -i ~/.ssh/id_rsa sftp.dev.carebridgehealth.com'
 
 # silver ag
 alias ag='ag --hidden -f'
@@ -109,6 +115,9 @@ alias ag='ag --hidden -f'
 # grab youtube stuff
 alias ytvid='youtube-dl --restrict-filenames -o "~/Music/vid/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
 alias ytaudio='youtube-dl --restrict-filenames --extract-audio -o "~/Music/%(title)s_%(width)sx%(height)s_%(upload_date)s.%(ext)s"'
+
+#mlbv MLB scores
+alias cubs='mlbv'
 
 #Search Git history
 searchgithistory() {
@@ -163,9 +172,19 @@ export PYTHONSTARTUP="$HOME/.pythonrc.py"
 alias devtunnel='sshuttle -NHvr bastion.dev.carebridgehealth.com'
 
 # Terraform stuff
+# CareBridge
 alias tplan='aws-vault exec carebridge-terraform -- terraform plan'
 alias tapply='aws-vault exec carebridge-terraform -- terraform apply'
 alias tinit='aws-vault exec carebridge-terraform -- terraform init'
+alias tinitupgrade='aws-vault exec carebridge-terraform -- terraform init -upgrade'
+
+# Mainstreet Health
+#
+alias mshtplan='aws-vault exec msh-terraform -- terraform plan'
+alias mshtapply='aws-vault exec msh-terraform -- terraform apply'
+alias mshtinit='aws-vault exec msh-terraform -- terraform init'
+alias mshtinitupgrade='aws-vault exec msh-terraform -- terraform init -upgrade'
+
 
 # Saw logs
 seelogs() {
