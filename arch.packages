@@ -54,6 +54,7 @@ evince
 evolution
 evolution-ews
 exfat-utils
+extra-cmake-modules
 f2fs-tools
 fakeroot
 file-roller
@@ -143,7 +144,9 @@ kitty
 konsole
 korganizer
 krita
+kvantum-qt5
 kwalletmanager
+latte-dock-git
 libappindicator-gtk3
 libreoffice-fresh
 linux
@@ -190,6 +193,7 @@ pgadmin4
 pkgconf
 pkgfile
 plasma-meta
+plasma5-applets-virtual-desktop-bar-git
 postgresql
 powerline-fonts
 powerline-vim
@@ -198,6 +202,7 @@ python-boto3
 python-click
 python-nautilus
 python-pip
+python-pygame
 python-pynvim
 python-pyqt5
 python2-requests
