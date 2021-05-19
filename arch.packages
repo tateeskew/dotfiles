@@ -5,6 +5,7 @@ adobe-source-sans-pro-fonts
 alacarte
 android-file-transfer
 ansible
+appmenu-gtk-module
 aptible-cli
 arc-gtk-theme
 arc-icon-theme
@@ -65,9 +66,11 @@ flatpak
 flex
 fsarchiver
 fwupd
+fzf
 gcc
 gdm
 gedit
+gimp
 gist
 git
 gnome-backgrounds
@@ -161,7 +164,6 @@ man-pages
 marker
 mattermost-desktop-bin
 mediainfo
-mlbv
 mlocate
 mousetweaks
 mpv
@@ -206,6 +208,7 @@ python-pygame
 python-pynvim
 python-pyqt5
 python2-requests
+qbittorrent
 ranger
 reflector
 remmina
@@ -213,6 +216,7 @@ ringcentral-meetings-bin
 rsync
 rygel
 s3cmd
+sane-airscan
 saw
 seahorse
 seahorse-nautilus
@@ -226,6 +230,7 @@ sshuttle
 st
 standardnotes-bin
 strace
+streamlink
 sublime-text-3
 sudo
 sushi

@@ -29,7 +29,7 @@ ZSH_THEME="tates"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux autojump copyfile command-not-found docker extract git git-prompt golang pip tmuxinator vagrant vi-mode zsh-autosuggestions)
+plugins=(archlinux autojump copyfile command-not-found docker extract fzf git git-prompt golang pip terraform tmuxinator vagrant vi-mode zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -177,6 +177,10 @@ alias tplan='aws-vault exec carebridge-terraform -- terraform plan'
 alias tapply='aws-vault exec carebridge-terraform -- terraform apply'
 alias tinit='aws-vault exec carebridge-terraform -- terraform init'
 alias tinitupgrade='aws-vault exec carebridge-terraform -- terraform init -upgrade'
+tunlock() {
+    #unlock state forefully
+    aws-vault exec carebridge-terraform -- terraform force-unlock "$1"
+}
 
 # Mainstreet Health
 #
