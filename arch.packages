@@ -1,7 +1,7 @@
 abricotine-bin
 ack
 adobe-base-14-fonts
-adobe-source-sans-pro-fonts
+adobe-source-sans-fonts
 alacarte
 android-file-transfer
 ansible
@@ -26,6 +26,7 @@ binutils
 bison
 bitwarden-bin
 bluez-utils
+borg
 bpftrace
 brave-bin
 byobu
@@ -131,6 +132,7 @@ handbrake
 highlight
 hplip
 htop
+hugin
 inetutils
 inotify-tools
 insync
@@ -151,10 +153,12 @@ kvantum-qt5
 kwalletmanager
 latte-dock-git
 libappindicator-gtk3
+libinput-gestures
 libreoffice-fresh
 linux
 linux-firmware
 linux-headers
+lsd
 lshw
 m4
 magic-wormhole
@@ -199,9 +203,11 @@ plasma5-applets-virtual-desktop-bar-git
 postgresql
 powerline-fonts
 powerline-vim
+print-manager
 python-boto
 python-boto3
 python-click
+python-email-validator
 python-nautilus
 python-pip
 python-pygame
@@ -222,6 +228,7 @@ seahorse
 seahorse-nautilus
 simple-scan
 simplenote-electron-bin
+simplescreenrecorder
 slack-desktop
 smartmontools
 soundconverter

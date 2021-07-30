@@ -119,6 +119,12 @@ alias ytaudio='youtube-dl --restrict-filenames --extract-audio -o "~/Music/%(tit
 #mlbv MLB scores
 alias cubs='mlbv'
 
+# show top 20 largest directories
+alias largest='du -hsx -- * | sort -rh | head -20'
+
+# show top 20 largest hidden directories
+alias largesthidden='du -hsx .[^.]* | sort -rh | head -20'
+
 #Search Git history
 searchgithistory() {
 
@@ -292,3 +298,5 @@ function ram() {
 
 # Fast ZSH syntax highlightin
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+alias ls='lsd'
+
