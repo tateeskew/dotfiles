@@ -5,6 +5,7 @@ adobe-source-sans-fonts
 alacarte
 android-file-transfer
 ansible
+appimagelauncher
 appmenu-gtk-module
 aptible-cli
 arc-gtk-theme
@@ -12,8 +13,10 @@ arc-icon-theme
 ark
 audacity
 autoconf
-autojump
+autojump-git
 automake
+aws-cli-v2-bin
+aws-session-manager-plugin
 aws-vault
 bandwhich
 baobab
@@ -24,7 +27,6 @@ bdf2psf
 bind
 binutils
 bison
-bitwarden-bin
 bluez-utils
 borg
 bpftrace
@@ -38,6 +40,8 @@ clementine
 cli53
 cronie
 cups
+dbeaver
+dbeaver-plugin-sshj
 dconf-editor
 dhcpcd
 dmidecode
@@ -137,6 +141,8 @@ inetutils
 inotify-tools
 insync
 intel-ucode
+jq
+jre11-openjdk
 jre8-openjdk
 kaccounts-providers
 kakoune-git
@@ -145,11 +151,10 @@ kdeconnect
 kdenlive
 kdepim-addons
 keybase-bin
-kitty
 konsole
 korganizer
 krita
-kvantum-qt5
+kvantum
 kwalletmanager
 latte-dock-git
 libappindicator-gtk3
@@ -168,6 +173,7 @@ man-pages
 marker
 mattermost-desktop-bin
 mediainfo
+mencoder
 mlocate
 mousetweaks
 mpv
@@ -190,12 +196,13 @@ nodejs-serverless
 noto-fonts
 noto-fonts-emoji
 ntfs-3g
+obsidian-appimage
 openssh
 orca
 p7zip
+pacman-contrib
 patch
 pcf-unifont
-pgadmin4
 pkgconf
 pkgfile
 plasma-meta
@@ -218,7 +225,6 @@ qbittorrent
 ranger
 reflector
 remmina
-ringcentral-meetings-bin
 rsync
 rygel
 s3cmd
@@ -226,6 +232,7 @@ sane-airscan
 saw
 seahorse
 seahorse-nautilus
+signal-desktop
 simple-scan
 simplenote-electron-bin
 simplescreenrecorder
@@ -236,12 +243,12 @@ sshfs
 sshuttle
 st
 standardnotes-bin
+steampipe-bin
 strace
 streamlink
 sublime-text-3
 sudo
 sushi
-sysdig
 sysstat
 systemd-resolvconf
 teams
@@ -273,6 +280,7 @@ ttf-liberation-sans-narrow
 ttf-ms-fonts
 ttf-roboto
 ttf-ubuntu-font-family
+ulauncher
 usbutils
 vagrant
 vino
@@ -286,7 +294,7 @@ which
 whois
 wireless_tools
 wpa_supplicant
-xdg-desktop-portal-gtk
+xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
 xorg-xinput
 xsel

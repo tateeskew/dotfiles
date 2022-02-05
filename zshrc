@@ -15,7 +15,7 @@ ZSH_THEME="tates"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
- DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -29,7 +29,7 @@ ZSH_THEME="tates"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(archlinux autojump copyfile command-not-found docker extract fzf git git-prompt golang pip terraform tmuxinator vagrant vi-mode zsh-autosuggestions)
+plugins=(aliases archlinux autojump copyfile command-not-found docker extract fzf git git-prompt golang pip terraform tmuxinator vagrant vi-mode zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,6 +46,11 @@ source ~/bin/tmuxinator.zsh
 ############################################
 # ALIASES                                  #
 ############################################
+# Expand aliases with ctrl+space
+#
+function my-expand-alias() { zle _expand_alias }
+zle -N my-expand-alias
+bindkey '^ ' my-expand-alias
 # grep aliases
 # Move export GREP_OPTIONS="--color=auto" (which is deprecated) from env variable to alias
 # Always enable colored `grep` output`
@@ -109,6 +114,9 @@ alias netlist='lsof -i -P | grep LISTEN'
 alias psftp='ssh -i ~/.ssh/id_rsa sftp.prd.carebridgehealth.com'
 alias dsftp='ssh -i ~/.ssh/id_rsa sftp.dev.carebridgehealth.com'
 
+#mainstreet sftp
+alias mssftp='ssh -i ~/.ssh/id_rsa sftp.prd.mainstreetruralhealth.com'
+
 # silver ag
 alias ag='ag --hidden -f'
 
@@ -124,6 +132,25 @@ alias largest='du -hsx -- * | sort -rh | head -20'
 
 # show top 20 largest hidden directories
 alias largesthidden='du -hsx .[^.]* | sort -rh | head -20'
+
+# AWS Queries
+# CareBridge
+alias cb-d-taskcpu='aws-vault exec cb-dev -- steampipe query "select cluster_name, task_definition_arn, cpu, memory from aws_ecs_task;"'
+alias cb-s-taskcpu='aws-vault exec cb-stg -- steampipe query "select cluster_name, task_definition_arn, cpu, memory from aws_ecs_task;"'
+alias cb-p-taskcpu='aws-vault exec cb-prd -- steampipe query "select cluster_name, task_definition_arn, cpu, memory from aws_ecs_task;"'
+
+cbawsusers() {
+    aws-vault exec tateeskew-cbauth -- steampipe query "select title, create_date, mfa_enabled from aws_iam_user where title not in ('terraform', 'github-cicd') order by title asc"
+}
+
+# Mainstreet
+alias msh-d-taskcpu='aws-vault exec msh-dev -- steampipe query "select cluster_name, task_definition_arn, cpu, memory from aws_ecs_task;"'
+alias msh-s-taskcpu='aws-vault exec msh-stg -- steampipe query "select cluster_name, task_definition_arn, cpu, memory from aws_ecs_task;"'
+alias msh-p-taskcpu='aws-vault exec msh-prd -- steampipe query "select cluster_name, task_definition_arn, cpu, memory from aws_ecs_task;"'
+
+mshawsusers() {
+    aws-vault exec tateeskew-mshauth -- steampipe query "select title, create_date, mfa_enabled from aws_iam_user where title not in ('terraform', 'github-cicd') order by title asc"
+}
 
 #Search Git history
 searchgithistory() {
