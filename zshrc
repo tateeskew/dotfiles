@@ -89,9 +89,9 @@ alias sz='source ~/.zshrc'
 alias vimrc='${=EDITOR} ~/.vimrc'
 
 # filesystem stuff
-alias ..="cd ../"
-alias ...="cd ../.."
-alias ....="cd ../../.."
+alias ..="cd ../ ; ls"
+alias ...="cd ../.. ; ls"
+alias ....="cd ../../.. ; ls"
 alias dotfiles="cd $HOME/lib/dotfiles"
 alias mkdir="mkdir -p"
 alias ls="ls --color"
@@ -227,6 +227,11 @@ alias mshtinitupgrade='aws-vault exec msh-terraform -- terraform init -upgrade'
 seelogs() {
     #pass environment and log group
     aws-vault exec cb-"$1" -- saw watch /ecs/"$1"/"$2"
+}
+
+# Make video from picture file ($1) mp3 ($2) and output file name ($4)
+makevideo() {
+    ffmpeg -loop 1 -i "$1" -i "$2" -vf "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:-1:-1:color=black,setsar=1,format=yuv420p" -shortest -fflags +shortest "$3"
 }
 
 # PATH

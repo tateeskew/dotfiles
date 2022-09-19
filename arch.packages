@@ -1,3 +1,5 @@
+1password
+aaxtomp3
 abricotine-bin
 ack
 adobe-base-14-fonts
@@ -12,6 +14,7 @@ arc-gtk-theme
 arc-icon-theme
 ark
 audacity
+audible-activator-git
 autoconf
 autojump-git
 automake
@@ -74,10 +77,12 @@ fwupd
 fzf
 gcc
 gdm
+geckodriver
 gedit
 gimp
 gist
 git
+glances
 gnome-backgrounds
 gnome-books
 gnome-boxes
@@ -156,7 +161,7 @@ korganizer
 krita
 kvantum
 kwalletmanager
-latte-dock-git
+latte-dock
 libappindicator-gtk3
 libinput-gestures
 libreoffice-fresh
@@ -174,10 +179,12 @@ marker
 mattermost-desktop-bin
 mediainfo
 mencoder
+mlbv
 mlocate
 mousetweaks
 mpv
 mtools
+mullvad-vpn-bin
 mutter
 nautilus
 nautilus-share
@@ -211,8 +218,10 @@ postgresql
 powerline-fonts
 powerline-vim
 print-manager
+putty
 python-boto
 python-boto3
+python-bs4
 python-click
 python-email-validator
 python-nautilus
@@ -239,11 +248,11 @@ simplescreenrecorder
 slack-desktop
 smartmontools
 soundconverter
+speedcrunch
 sshfs
 sshuttle
 st
 standardnotes-bin
-steampipe-bin
 strace
 streamlink
 sublime-text-3
@@ -277,6 +286,7 @@ ttf-gelasio-ib
 ttf-joypixels
 ttf-liberation
 ttf-liberation-sans-narrow
+ttf-meslo
 ttf-ms-fonts
 ttf-roboto
 ttf-ubuntu-font-family
