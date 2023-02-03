@@ -95,10 +95,10 @@ alias ....="cd ../../.. ; ls"
 alias dotfiles="cd $HOME/lib/dotfiles"
 alias mkdir="mkdir -p"
 alias ls="ls --color"
-alias ll="ls -lahtr --color" # better output
+alias ll="ls -lahtr --color always" # better output
 alias lll="LC_COLLATE=C ls -alF"
-alias lf="ls -l | egrep -v '^d'" # list files only
-alias ldir="ls -l | egrep '^d'" # list dirs only
+alias lf="ls -l | grep -v '^d'" # list files only
+alias ldir="ls -ld */" # list dirs only
 alias du="du -h"
 alias df="df -h"
 alias lnew='ls *(.om[1,3])' # list three newest
@@ -272,7 +272,7 @@ function pbf()
 }
 
 #text put
-function pbf()
+function tpbf()
 {
     local url='https://paste.c-net.org/'
     if (( $# )); then
@@ -328,7 +328,7 @@ function ram() {
   fi
 }
 
-# Fast ZSH syntax highlightin
+# Fast ZSH syntax highlighting
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 alias ls='lsd'
 

@@ -47,6 +47,7 @@ dbeaver
 dbeaver-plugin-sshj
 dconf-editor
 dhcpcd
+discord
 dmidecode
 docker
 docker-compose
@@ -56,6 +57,7 @@ dosfstools
 efibootmgr
 elinks
 elixir
+endeavour
 eog
 epiphany
 ethtool
@@ -114,12 +116,12 @@ gnome-software
 gnome-system-monitor
 gnome-terminal
 gnome-themes-extra
-gnome-todo
 gnome-tweaks
 gnome-user-docs
 gnome-user-share
 gnome-video-effects
 gnome-weather
+gnu-netcat
 google-chrome
 google-earth-pro
 gotop-bin
@@ -161,7 +163,7 @@ korganizer
 krita
 kvantum
 kwalletmanager
-latte-dock
+latte-dock-git
 libappindicator-gtk3
 libinput-gestures
 libreoffice-fresh
@@ -178,6 +180,7 @@ man-pages
 marker
 mattermost-desktop-bin
 mediainfo
+memtester
 mencoder
 mlbv
 mlocate
@@ -191,11 +194,10 @@ nautilus-share
 nautilus-terminal
 neofetch
 neovim
-nerd-fonts-cascadia-code
-nerd-fonts-fira-code
 netctl
 networkmanager
 networkmanager-openvpn
+networkmanager-vpnc
 nfs-utils
 nmap
 nmon
@@ -206,6 +208,7 @@ ntfs-3g
 obsidian-appimage
 openssh
 orca
+otf-cascadia-code-nerd
 p7zip
 pacman-contrib
 patch
@@ -213,6 +216,7 @@ pcf-unifont
 pkgconf
 pkgfile
 plasma-meta
+plasma-wayland-session
 plasma5-applets-virtual-desktop-bar-git
 postgresql
 powerline-fonts
@@ -269,6 +273,7 @@ tlp
 tlp-rdw
 tlpui-git
 tmux
+tmuxinator
 totem
 traceroute
 tracker
@@ -281,6 +286,7 @@ ttf-code2000
 ttf-croscore
 ttf-dejavu
 ttf-fira-code
+ttf-firacode-nerd
 ttf-font-awesome-4
 ttf-gelasio-ib
 ttf-joypixels
