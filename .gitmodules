@@ -1,12 +1,12 @@
 [submodule "vim/pack/tate/start/ack"]
 	path = vim/pack/tate/start/ack
-	url = git://github.com/mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule "vim/pack/tate/start/vim-commentary"]
 	path = vim/pack/tate/start/vim-commentary
-	url = git://github.com/tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/pack/tate/start/salt-vim"]
 	path = vim/pack/tate/start/salt-vim
-	url = git://github.com/saltstack/salt-vim.git
+	url = https://github.com/saltstack/salt-vim.git
 [submodule "vim/pack/tate/start/vim-easymotion"]
 	path = vim/pack/tate/start/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
